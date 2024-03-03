@@ -22,3 +22,4 @@ Add training scripts
 add validation scripts
 add augmentation scripts
 Need to test aws, docker and flask api utilities in "util" folder
+Need to make sure the pytorch models are hosted in google drive and a downloadable link is avaialble
