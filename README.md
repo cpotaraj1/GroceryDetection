@@ -1,5 +1,7 @@
 # gordianRobotics
 Tried U2Seg and SAM model to get an estimate of ROI from th eimage but it needed a lot more time to tune it. With the time constraints in mind, I have decided to move with yolov5 and train the model to do TASK 1
+With limited resources and time I was able to get to only one task, However For the second task, we can use the below link to train the model and have a logic to find the class of the instance from task 1
+https://github.com/yingxin-jia/SuperGlue-pytorch/tree/master
 
 This repo helps in understanding how we used yolov5 weights trained on imagenet data and tuned the model on SKU110 dataset
 We have the following results of the model against the unseen data:
@@ -23,3 +25,4 @@ add validation scripts
 add augmentation scripts
 Need to test aws, docker and flask api utilities in "util" folder
 Need to make sure the pytorch models are hosted in google drive and a downloadable link is avaialble
+Need to add functionality to support SuperGLUE matching model
