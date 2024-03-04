@@ -1,4 +1,6 @@
-# gordianRobotics
+# gordianRobotics tasks
+
+## Summary
 Tried U2Seg and SAM model to get an estimate of ROI from th eimage but it needed a lot more time to tune it. With the time constraints in mind, I have decided to move with yolov5 and train the model to do TASK 1
 With limited resources and time I was able to get to only one task, However For the second task, we can use the below link to train the model and have a logic to find the class of the instance from task 1
 https://github.com/yingxin-jia/SuperGlue-pytorch/tree/master
@@ -9,7 +11,7 @@ We have the following results of the model against the unseen data:
 ![Alt text](images/Results/val_0.jpg) ![Alt text](images/Results/val_1.jpg) ![Alt text](images/Results/val_3.jpg) ![Alt text](images/Results/val_15.jpg) ![Alt text](images/Results/val_24.jpg) ![Alt text](images/Results/val_58.jpg) ![Alt text](images/Results/val_59.jpg) ![Alt text](images/Results/val_66.jpg) ![Alt text](images/Results/val_112.jpg) ![Alt text](images/Results/val_128.jpg)
 
 
-SPEED TEST:
+## SPEED TEST:
 The complete breakdown of the inference time 
 Speed: 0.1ms pre-process, 4.3ms inference, 2.2ms NMS per image at shape (16, 3, 640, 640)
 
@@ -19,10 +21,10 @@ Some useful graphs from training session
 
 Install requirements.txt and run "python detect.py"
 
-TO-DO TASKS:
-Add training scripts 
-add validation scripts
-add augmentation scripts
-Need to test aws, docker and flask api utilities in "util" folder
-Need to make sure the pytorch models are hosted in google drive and a downloadable link is avaialble
-Need to add functionality to support SuperGLUE matching model
+## TODO tasks:
+* Add training scripts 
+* add validation scripts
+* add augmentation scripts
+* Need to test aws, docker and flask api utilities in "util" folder
+* Need to make sure the pytorch models are hosted in google drive and a downloadable link is avaialble
+* Need to add functionality to support SuperGLUE matching model
