@@ -1,4 +1,4 @@
-# gordianRobotics tasks
+# Grocery Detection and Identification
 
 ## Summary
 Tried U2Seg and SAM model to get an estimate of ROI from th eimage but it needed a lot more time to tune it. With the time constraints in mind, I have decided to move with yolov5 and train the model to do TASK 1
